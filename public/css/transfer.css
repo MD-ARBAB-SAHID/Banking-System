@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+
+.container{
+  padding: .8rem .4rem;
+  margin: .4rem .4rem;
+}
+
+
+
+h2.Name,h2.Id,h2.Balance{
+    font-family: 'Montserrat', sans-serif;
+    padding: .4rem .8rem;
+    margin: .6rem 1.4rem;
+    font-size: 2.4rem;
+    display: inline-block;
+    width: 70%;
+    font-weight: 800;
+    box-sizing: border-box;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    display: inline-block;
+    font-weight: 600;
+}
+
+
+form.transfer-form{
+    /* border: 2px solid black; */
+    background-color:rgba(221, 221, 221, 0.856); 
+    width: 55%;
+    padding: 3rem 2.5rem;
+    margin: 1.5rem auto;
+    text-align: center;
+    border-radius: .8rem;
+
+}
+
+input#amount,select.senders-account{
+    width: 65%;
+    display: block;
+    margin: 2rem auto;
+    padding: .6rem .8rem;
+    font-size: 1.92rem;
+    text-align: center;
+    border: .2rem solid black;
+    border-radius: .8rem;
+    
+    
+}
+
+button.submit {
+  width: 65%;
+    background-color: rgb(57, 185, 61); /* Green */
+    border: none;
+    color: white;
+    padding: 1.5rem 3.2rem;
+    margin: 1rem auto;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.6rem;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: .8rem;
+    transition: all 0.5s ease-in-out;
+  }
+
+ 
+button.submit:hover{
+    
+    background-color: rgb(19, 126, 23);
+    width: 100%;
+    
+}
+
+option:nth-child(even){
+    
+    background-color: #f2f2f2;
+}
+
+ option:hover{
+    background-color:#ddd;
+}
+
+
+@media (max-width: 767px)
+{
+  html{
+    font-size: 45%;
+  }
+  .container{
+    padding: .8rem .4rem;
+    margin: .4rem auto;
+    text-align: center;
+  }
+
+  form.transfer-form{
+    /* border: 2px solid black; */
+    background-color:rgba(221, 221, 221, 0.856); 
+    width: 70%;
+    padding: 3rem 2.5rem;
+    margin: 1.5rem auto;
+    text-align: center;
+    border-radius: .8rem;
+
+}
+input#amount,select.senders-account{
+    width: 75%;
+    display: block;
+    margin: 2rem auto;
+    padding: .6rem .8rem;
+    font-size: 1.92rem;
+    text-align: center;
+    border: .2rem solid black;
+    border-radius: .8rem;
+    
+    
+}
+button.submit{
+  width: 75%;
+}
+  
+}
+
+
+
+
+
+@media (max-width: 580px)
+{
+  html{
+    font-size: 43%;
+  }
+  form.transfer-form{
+    /* border: 2px solid black; */
+    background-color:rgba(221, 221, 221, 0.856); 
+    width: 75%;
+    padding: 3rem 2.5rem;
+    margin: 1.5rem auto 4rem;
+    text-align: center;
+    border-radius: .8rem;
+
+}
+  input#amount,select.senders-account{
+    width: 85%;
+    display: block;
+    margin: 2rem auto;
+    padding: .6rem .8rem;
+    font-size: 1.92rem;
+    text-align: center;
+    border: .2rem solid black;
+    border-radius: .8rem;
+    
+    
+}
+button.submit{
+  width: 85%;
+}
+ 
+}
+@media (max-width: 450px)
+{
+  html{
+    font-size: 42%;
+  }
+  
+  form.transfer-form{
+    /* border: 2px solid black; */
+    background-color:rgba(221, 221, 221, 0.856); 
+    width: 85%;
+    padding: 3rem 2.5rem;
+    margin: 1.5rem auto 6rem;
+    text-align: center;
+    border-radius: .8rem;
+
+}
+
+  input#amount,select.senders-account{
+    width: 90%;
+    display: block;
+    margin: 2rem auto;
+    padding: .6rem .8rem;
+    font-size: 1.92rem;
+    text-align: center;
+    border: .2rem solid black;
+    border-radius: .8rem;
+    
+    
+}
+button.submit{
+  width: 90%;
+}
+  
+}
+
+@media (max-width: 350px)
+{
+  html{
+    font-size: 40%;
+  }
+  
+  form.transfer-form{
+    /* border: 2px solid black; */
+    background-color:rgba(221, 221, 221, 0.856); 
+    width: 85%;
+    padding: 3rem 2.5rem;
+    margin: 1.5rem auto 7rem;
+    text-align: center;
+    border-radius: .8rem;
+
+}
+
+  input#amount,select.senders-account{
+    width: 90%;
+    display: block;
+    margin: 2rem auto;
+    padding: .6rem .8rem;
+    font-size: 1.92rem;
+    text-align: center;
+    border: .2rem solid black;
+    border-radius: .8rem;
+    
+    
+}
+button.submit{
+  width: 90%;
+}
+p{
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  font-weight: 600;
+}
+
+  
+}

@@ -1,0 +1,35 @@
+<%- include('partials/header'); -%>
+    <title>Transaction History</title>
+    <link rel="stylesheet" href="css/navfoot.css">
+    <link rel="stylesheet" href="css/index.css">
+<%- include('partials/nav'); -%>
+
+    <table id="customers">
+      <tr>
+        <th>Sender's Name</th>
+        <th>Reciever's Name</th>
+        <th>Amount</th>
+        <th>Date (IST)</th>
+        <th>Time (IST)</th>
+      </tr>
+      <% transactionList.forEach(element => { %>
+          <tr>
+              <td><%= element.SendersName %></td>
+              <td><%= element.RecieversName %></td>
+              <td><%= element.Amount %></td>
+              <td><%= element.Date %></td>
+              <td><%= element.Time %></td>
+          </tr>
+      <% }); %>
+    </table>
+    
+  
+    
+    
+    <%- include('partials/footer'); -%>
+    <%- include('partials/end'); -%> 
+
+
+
+
+   

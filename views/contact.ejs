@@ -1,0 +1,65 @@
+<%- include('partials/header'); -%> 
+<title><%= contactUs %></title>
+    <link rel="stylesheet" href="css/navfoot.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <%- include('partials/nav'); -%>
+    <div class="container1">
+        <h1>Send Us A Message</h1>
+  
+        <form action="/message" method="post" class="myForm" autocomplete="off">
+          <input
+            type="text"
+            name="myName"
+            id="name"
+            placeholder="Enter Your Full-Name"
+            required
+          />
+          <input
+            type="email"
+            name="myEmail"
+            id="email"
+            placeholder="Enter Your Email"
+            required
+          />
+          <input
+            type="tel"
+            name="myNumber"
+            id="number"
+            placeholder="Enter Your Number"
+            required
+          />
+          <textarea
+            name="myText"
+            id="text"
+            cols="30"
+            rows="10"
+            placeholder="Enter Your Message"
+            required
+          ></textarea>
+          <button type="submit" class="submit">Submit</button>
+        </form>
+      </div>
+      <div class="container2">
+        <div class="contacts">
+          <i class="fas fa-phone-alt contacts-icon"
+            ><span>+91-096587878</span></i
+          >
+          
+          <i class="fas fa-envelope contacts-icon"
+            ><span>cityBank@contact.in</span></i
+          >
+        </div>
+        <div class="socials">
+       <i class="fab fa-facebook socials-icon" id="fb"><a href="https://www.facebook.com" target="_blank">facebook</a></i>
+       <i class="fab fa-instagram socials-icon" id="insta"><a href="https://www.instagram.com" target="_blank">Instagram</a></i>
+       <i class="fab fa-twitter socials-icon" id="twitter"><a href="https://www.twitter.com" target="_blank">Twitter</a></i>
+       
+        </div>
+      </div>
+    <%- include('partials/footer'); -%> 
+    <script
+    src="https://kit.fontawesome.com/4913f23a8d.js"
+    crossorigin="anonymous"
+  ></script>
+   <%- include('partials/end'); -%> 
+   

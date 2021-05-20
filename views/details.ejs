@@ -1,0 +1,18 @@
+<%- include('partials/header'); -%> 
+<title><%=customerDetail.name %>'s Details </title>
+    <link rel="stylesheet" href="css/navfoot.css">
+    <link rel="stylesheet" href="css/details.css">
+    <%- include('partials/nav'); -%>
+    <div class="detail-container">
+    <h1 class="detail-heading">Customer Details</h1>
+    <div><h3 class="detail-name">Name : <p><%=customerDetail.name %></p></h3></div>
+    <div><h3 class="detail-account-no">Account No : <p><%=customerDetail._id %></p></h3></div>
+    <div><h3 class="detail-email">Email : <p><%=customerDetail.email %></p></h3></div>
+    <div><h3 class="detail-balance">Balance : <p><%=customerDetail.balance %></p></h3></div>
+    <form action="/transfer" method="post">
+        <button type="submit" name="transfer" value=<%=customerDetail._id%> class="button">Tranfer Money</button>
+   
+    </form>
+</div>
+    <%- include('partials/footer'); -%> 
+    <%- include('partials/end'); -%> 

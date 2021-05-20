@@ -1,0 +1,35 @@
+<%- include('partials/header'); -%>
+    <title>Customer List</title>
+    <link rel="stylesheet" href="css/navfoot.css">
+    <link rel="stylesheet" href="css/index.css">
+<%- include('partials/nav'); -%>
+
+    <table id="customers">
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>View Details</th>
+      </tr>
+      <% customerList.forEach(element => { %>
+          <tr>
+              <td><%= element.name %></td>
+              <td><%= element.email %></td>
+              <td>
+              <form action="/" method="post">
+                  <button type="submit" value=<%= element._id %> name="viewDetails" class="detail">View details</button>
+              </form>
+          </td>
+          </tr>
+      <% }); %>
+    </table>
+    
+  
+    
+    
+    <%- include('partials/footer'); -%>
+    <%- include('partials/end'); -%> 
+
+
+
+
+   

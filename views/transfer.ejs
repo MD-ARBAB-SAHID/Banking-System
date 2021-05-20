@@ -1,0 +1,27 @@
+<%- include('partials/header'); -%> 
+    <title>Transfer Money</title>
+    <link rel="stylesheet" href="css/navfoot.css">
+    <link rel="stylesheet" href="css/transfer.css">
+<%- include('partials/nav'); -%> 
+<div class="container">
+    <h2 class="Name">Account Holder : <p><%= senderDetails.name %></p></h2>
+    
+    <h2 class="Balance">Bank Balance : <p><%= senderDetails.balance %></p></h2>
+</div>
+    <form action="/finalTransfer" method="post" class="transfer-form">
+        <input type="number" name="amount" id="amount" placeholder="Enter the amount" required min="1">
+      
+        <select name="reciever" id="receiver" required  class="senders-account" >
+           
+        <option value="">---Select Receiver's Account---</option> 
+        <% recieverList.forEach(element => { %>
+             <option value=<%= element._id %> class="decorated"><%= element.name %></option> 
+              
+             <% }); %>
+            </select>
+           
+            
+     <button type="submit" value=<%= senderDetails._id %> name="senderId" class="submit">Transfer</button>
+    </form>
+    <%- include('partials/footer'); -%> 
+    <%- include('partials/end'); -%> 

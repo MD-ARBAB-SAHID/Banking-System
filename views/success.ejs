@@ -1,0 +1,18 @@
+<%- include('partials/header') -%>
+<title>Transfer Successful</title>
+<link rel="stylesheet" href="css/navfoot.css">
+<link rel="stylesheet" href="css/result.css">
+<%- include('partials/nav'); -%>
+
+<div class="container">
+    <lottie-player src="https://assets3.lottiefiles.com/packages/lf20_Vwcw5D.json"  background="transparent"  speed="1"     class="success" autoplay></lottie-player>
+    <h1><%= contentResult %></h1>
+    <div class="button-container">
+    <a href="/customers" class="button" >View All Customers</a>
+    <a href="/transactionList" class="button" target="_blank">Transaction History</a>
+</div>
+</div>
+
+<%- include('partials/footer'); -%>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<%- include('partials/end'); -%> 

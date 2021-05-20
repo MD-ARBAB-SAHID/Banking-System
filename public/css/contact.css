@@ -1,0 +1,178 @@
+.container1 {
+    width: 80%;
+    
+    text-align: center;
+    margin: 3rem auto 1rem;
+    text-align: center;
+    padding: 3rem 8rem;
+    background-color: rgba(221, 221, 221, 0.856);
+    border-radius: 0.8rem;
+  }
+  form.myForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.5rem 1.2rem;
+    
+  }
+  input,
+  textarea {
+    width: 80%;
+    margin: 1rem;
+    padding: 2rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    outline: none;
+  }
+  .container1 h1 {
+    font-size: 4.2rem;
+    margin-top: 1rem;
+    
+  }
+ 
+button.submit{
+    width: 80%;
+    background-color: rgb(57, 185, 61);
+    color: white;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+   
+    display: block;
+    margin: 1rem;
+    padding: 2rem;
+    border: none;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    outline: none;
+}
+
+button.submit:hover{
+    background-color: rgb(19, 126, 23);
+    color: white;
+    width: 100%;
+}
+
+
+
+
+  .container2 {
+    width: 80%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 1.5rem auto 8rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.8rem;
+    padding: 3rem 8rem;
+    background-color: rgba(221, 221, 221, 0.856);
+   
+  }
+  .contacts,
+  .socials {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin: 0.6rem 1rem;
+  }
+  .contacts-icon,.socials-icon{
+    font-size: 2.5rem;
+    margin: 0.8rem 0.8rem;
+    padding: 0.4rem;
+  }
+  .contacts-icon span {
+    margin: 0.8rem;
+  }
+  .socials-icon{
+      font-size: 3.5rem;
+  }
+  .socials-icon a{
+      font-size: 2.5rem;
+      text-decoration: none;
+    margin: 0.8rem 0.8rem;
+    padding: 0.4rem;
+    cursor: pointer;
+  }
+  #fb{
+      color: #3b5998;
+  }
+  #insta{
+    color: #bc2a8d;
+  }
+  #twitter{
+      color: #00acee;
+  }
+  #fb:hover{
+      color: #1a397c;
+  }
+  #twitter:hover{
+    color: #0492ca;
+  }
+  #insta:hover{
+    color: #990e6d;
+  }
+
+  @media only screen and (max-width:998px)
+  {
+    html{
+        font-size: 55%;
+    }
+    input,textarea,button.submit{
+        width: 85%;
+    }
+    .container1,.container2{
+        width: 85%;
+    }
+
+  }
+
+  @media only screen and (max-width:767px)
+  {     html{
+      font-size: 45%;
+  }
+      input,textarea,button.submit{
+          width: 90%;
+      }
+      .container1,.container2{
+        padding: 3rem 6rem;
+    }
+
+     
+  }
+  @media only screen and (max-width:550px)
+  {     html{
+      font-size: 43%;
+  }
+      input,textarea,button.submit{
+          width: 95%;
+      }
+      .container1,.container2{
+          width: 90%;
+        padding: 3rem 5rem;
+    }
+
+     
+  }
+  @media only screen and (max-width:450px)
+  {     html{
+      font-size: 43%;
+  }
+      input,textarea,button.submit{
+          width: 95%;
+      }
+      .container1,.container2{
+          width: 95%;
+        padding: 2.8rem 2rem;
+    }
+   
+     
+  }
+ 

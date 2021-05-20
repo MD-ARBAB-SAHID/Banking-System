@@ -1,0 +1,155 @@
+
+.container1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #f7f7fa;
+    background-color:rgba(221, 221, 221, 0.856);
+    
+    border-radius: .8rem;
+    width: 90%;
+    margin: 4rem auto 8rem;
+    padding: 3rem 8rem;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 45%;
+    margin: 1.5rem 1.2rem;
+    padding: 2rem;
+    border-radius: .8rem;
+
+}
+
+.box-heading,.content-heading{
+    font-size: 3.2rem;
+    padding: .2rem .4rem;
+    margin: .4rem .6rem;
+    color: #0c2074;
+}
+
+.box-description,.content-description{
+    font-size: 2rem;
+    padding: .2rem .4rem;
+    margin: .4rem .8rem;
+    line-height: 1.4;
+   
+    color: black;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   /* height: 45rem; */
+    padding: 2.5rem ;
+    margin: 7.5rem 0rem;
+    width: 100%;
+}
+
+.image-section{
+    width: 32.2%;
+    height:50%;
+    padding:  1.5rem;
+   
+}
+
+   
+
+img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+
+.content-section{
+    display: inline-block;
+    width:65%;
+    
+   
+    
+}
+
+.content-heading{
+   
+   margin-bottom: 2rem;
+    color: #0c2074;
+}
+
+.content-description{
+
+    color: #555;
+}
+
+.content:nth-child(odd)
+{
+    background-color: #f7f7fa;
+}
+
+
+@media only screen and (max-width:998px)
+{
+    
+    .container1{
+        
+        padding: 3rem 6rem;
+    }
+    .box{
+       
+        padding: 1.5rem;
+    }
+    
+}
+
+@media only screen and (max-width:767px)
+{
+    
+    .container1{
+        
+        padding: 2.5rem 4.5rem;
+    }
+    .box{
+       width: 80%;
+        padding: 1.3rem;
+    }
+    .content-section{
+       
+        width: 100%;
+    }
+   .image-section{
+       margin: auto;
+       width: 65%;
+       height: 97%;
+   }
+    
+}
+@media only screen and (max-width:425px)
+{
+    html{
+        font-size: 43%;
+
+    }
+    .container1{
+        
+        padding: 2rem 3rem;
+    }
+    .box{
+       width: 85%;
+        padding: 1rem;
+    }
+    .image-section{
+        margin: auto;
+        width: 90%;
+        height: 135%;
+    }
+    
+}
